@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 
 class TodoList extends Component {
@@ -8,11 +9,12 @@ class TodoList extends Component {
   }
   eachItem(item, i){
     return(<li key={i}>
-            <span id={i} onClick={this.deleteItem}><i className='fa fa-trash-o'></i></span>
+            <span id={i} onClick={this.deleteItem}><i className='fa fa-trash-o' id={i}></i></span>
             <p>{item}</p>
            </li>)
   }
   deleteItem(event){
+    console.log(event.target + event.target.id)
     this.props.onDeleteItem(event.target.id)
   }
   render() {
