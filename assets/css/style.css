@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: url("https://hd.unsplash.com/3/doctype-hi-res.jpg");
+  background-size: cover;
+}
+#app {
+  height: 100%;
+}
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e04932;
+  width: 40%;
+  margin: 0 auto;
+}
+h1 {
+  color: #fff;
+  line-height: 2em;
+  height: 2em;
+  margin: 0;
+  text-align: center;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+ul li:first-child {
+  border-top: solid 1px #dbdbdb;
+}
+ul li {
+  color: #282c37;
+  background: #f1eae2;
+  min-height: 48px;
+  border-bottom: solid 1px #dbdbdb;
+  font-size: 1.5em;
+}
+ul li:nth-child(2n) {
+  background: #fefef6;
+}
+ul li:last-child {
+  border: none;
+}
+ul li p {
+  margin: 0;
+  margin-left: 1em;
+  line-height: 1.9em;
+  display: inline-block;
+  font-size: 1vw;
+  font-size: 1em;
+}
+ul li span {
+  padding: 0;
+  width: 0;
+  opacity: 0;
+  display: inline-block;
+  background: red;
+  transition: all 0.3s;
+}
+ul li:hover span {
+  padding: 0.42em;
+  width: 18px;
+  opacity: 1;
+}
+form {
+  background: #000;
+  border-bottom: solid 1px #dbdbdb;
+  border-left: solid 1px #dbdbdb;
+  height: 50px;;
+}
+form input {
+  outline: none;
+  width: 67%;
+  height: 100%;
+  font-size: 1.5em;
+  border: 0;
+  padding: 0px 1em;
+}
+form input[type="submit" i] {
+  background: #000;
+  color: #fff;
+  width: 23.3%;
+  cursor: pointer;
+}
